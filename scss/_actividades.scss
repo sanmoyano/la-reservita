@@ -1,0 +1,11 @@
+.actividades {
+    @extend %background-secciones;
+
+    h1 {
+        @extend %titulos-secciones;
+    }
+}
+
+.actividades_cards {
+    
+}
