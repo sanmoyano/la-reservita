@@ -8,10 +8,31 @@
 %titulos-secciones {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.4rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: start;
     color: #0d0d0d;
     letter-spacing: 0.2rem;
     padding: 2.4rem;
+}
+
+%titulos-card {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: start;
+    color: #0d0d0d;
+    letter-spacing: 0.2rem;
+    text-align: end;
+}
+
+%textos-card {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-align: start;
+    color: #0d0d0d;
+    opacity: 0.8;
+    letter-spacing: 0.2rem;
+    text-align: end;
 
 }

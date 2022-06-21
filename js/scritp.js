@@ -27,19 +27,25 @@ class Actividades {
     }
 }
 
-const canyoning = new Actividades('img/canyoning.jpg', 'Canyoning', 'Descripcion canyoning');
-const torrentismo = new Actividades('img/torrentismo.jpg', 'Torrentismo', 'Descripcion torrentismo');
-const senderismo = new Actividades('img/senderismo.jpg', 'Senderismo', 'Descripcion senderismo');
-const birdwatching = new Actividades('img/birdwatching.jpg', 'Birdwatching', 'Descripcion birdwatching');
-const meditacions = new Actividades('img/meditacion.jpg', 'Meditacion', 'Descripcion meditacion');
-const yoga = new Actividades('img/yoga.jpg', 'Yoga', 'Descripcion yoga');
-const arborismo = new Actividades('img/arborismo.jpg', 'Arborismo', 'Descripcion arborismo');
-const camping = new Actividades('img/camping.jpg', 'Camping', 'Descripcion camping');
+const canyoning = new Actividades('https://images.unsplash.com/photo-1532443603613-61fa154742cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80', 'Canyoning', 'Descripcion canyoning');
+const torrentismo = new Actividades('https://images.unsplash.com/photo-1539617546058-a8f9510b464e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Torrentismo', 'Descripcion torrentismo');
+const senderismo = new Actividades('https://images.unsplash.com/photo-1532443603613-61fa154742cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80', 'Senderismo', 'Descripcion senderismo');
+const birdwatching = new Actividades('https://images.unsplash.com/photo-1539617546058-a8f9510b464e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Birdwatching', 'Descripcion birdwatching');
+const meditacions = new Actividades('https://images.unsplash.com/photo-1532443603613-61fa154742cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80', 'Meditacion', 'Descripcion meditacion');
+const yoga = new Actividades('https://images.unsplash.com/photo-1539617546058-a8f9510b464e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Yoga', 'Descripcion yoga');
+const arborismo = new Actividades('https://images.unsplash.com/photo-1532443603613-61fa154742cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80', 'Arborismo', 'Descripcion arborismo');
+const camping = new Actividades('https://images.unsplash.com/photo-1539617546058-a8f9510b464e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Camping', 'Descripcion camping');
 
 const actividadesArray = [canyoning, torrentismo, senderismo, birdwatching, meditacions, yoga, arborismo, camping];
 
 actividadesArray.forEach(actividad => {
     actividades.innerHTML += `
-        <div><h5>${actividad.titulo}</h5></div>
-    `
+        <div class="card stacked">
+            <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}">
+            <div class="card_contenido">
+                <h2 class="card_title">${actividad.titulo}</h2>
+                <p class="card_text">${actividad.descripcion}</p>
+            </div>
+        </div>`
+
 })
