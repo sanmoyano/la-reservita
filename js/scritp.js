@@ -48,4 +48,9 @@ actividadesArray.forEach(actividad => {
             </div>
         </div>`
 
+    const backgroundColor = document.querySelector('.card')
+    const colorChange = ["#F2D338", "#F2C641", "#F26A4B", "#F29999"]
+    console.log(backgroundColor);
+
 })
+
