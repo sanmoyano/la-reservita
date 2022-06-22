@@ -94,7 +94,7 @@ form {
   align-items: center;
   justify-content: center;
   margin: auto;
-  max-width: 600pz; }
+  max-width: 600px; }
   form .form_container {
     padding: 2.4rem;
     width: 100%; }
@@ -103,14 +103,20 @@ form {
       flex-direction: column;
       gap: 1.6rem; }
       form .form_container .form_content button {
-        width: 100px;
-        margin-top: 1.6rem;
-        background-color: #F26A4B; }
+        width: 150px;
+        background-color: #F26A4B;
+        border: #F26A4B;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #f2f2f2;
+        padding: 1rem;
+        cursor: pointer; }
       form .form_container .form_content input {
         height: 32px;
         padding: 1.6rem; }
       form .form_container .form_content textarea {
-        height: 128px; }
+        min-height: 128px; }
 
 .actividades_title, .contacto_title {
   background-color: #f2f2f2;
@@ -145,3 +151,16 @@ form {
   opacity: 0.8;
   letter-spacing: 0.2rem;
   text-align: end; }
+
+.footer_container {
+  background-color: #0d0d0d;
+  padding: 2.4rem; }
+  .footer_container .footer_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center; }
+    .footer_container .footer_content .redes {
+      display: flex;
+      flex-direction: row; }

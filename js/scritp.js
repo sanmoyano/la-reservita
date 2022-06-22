@@ -61,8 +61,25 @@ contacto.innerHTML = `
                 <input type="text" name="name" id="full-name" placeholder="Nombre" required="">
                 <input type="email" name="email" placeholder="Correo electronico" required="@">
                 <textarea  name="message""></textarea>
-                <button type="submit">enviar</button>
+                <button type="submit">ENVIAR</button>
             </div>
         </div>
     </form>
+`
+
+const footer = document.querySelector('#footer');
+footer.innerHTML = `
+    <div class="footer_container">
+        <div class="footer_content">
+            <div class="redes">
+                <p>Seguinos en nuestras redes</p>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="titulos">
+                <h1>La Reservita</h1>
+                <p>Actividades de aventura y para el ser</p>
+            </div>
+        </div>
+    </div>
 `
