@@ -164,3 +164,30 @@ form {
     .footer_container .footer_content .redes {
       display: flex;
       flex-direction: row; }
+    .footer_container .footer_content .redes {
+      gap: 1.6rem; }
+      .footer_container .footer_content .redes p {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        text-align: start;
+        color: #f2f2f2;
+        opacity: 0.8;
+        letter-spacing: 0.2rem;
+        text-align: end; }
+    .footer_container .footer_content .titulos {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.6rem;
+      letter-spacing: 0.2rem;
+      color: #f2f2f2;
+      font-weight: 400;
+      text-align: end; }
+      .footer_container .footer_content .titulos .texto {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        text-align: start;
+        color: #f2f2f2;
+        opacity: 0.8;
+        letter-spacing: 0.2rem;
+        text-align: end; }

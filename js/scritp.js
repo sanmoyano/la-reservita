@@ -77,8 +77,8 @@ footer.innerHTML = `
                 <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram"></a>
             </div>
             <div class="titulos">
-                <h1>La Reservita</h1>
-                <p>Actividades de aventura y para el ser</p>
+                <p>La Reservita</p>
+                <p class="texto">Actividades de aventura y para el ser</p>
             </div>
         </div>
     </div>
