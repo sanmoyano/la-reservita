@@ -65,8 +65,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1/1.5;
-    background-color: ""; }
+    aspect-ratio: 1/1.5; }
     .actividades_grid .card .card_img {
       width: 100%;
       height: 100%;
@@ -82,19 +81,44 @@ img {
     background-color: #f2f2f2;
     margin: 1.6rem;
     z-index: 1; }
+  .actividades_grid .background {
+    background-color: #F26A4B; }
   .actividades_grid .stacked {
     display: grid; }
   .actividades_grid .stacked > * {
     grid-column: 1 / 2;
     grid-row: 1 / 2; }
 
-.actividades, .contacto {
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 600pz; }
+  form .form_container {
+    padding: 2.4rem;
+    width: 100%; }
+    form .form_container .form_content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem; }
+      form .form_container .form_content button {
+        width: 100px;
+        margin-top: 1.6rem;
+        background-color: #F26A4B; }
+      form .form_container .form_content input {
+        height: 32px;
+        padding: 1.6rem; }
+      form .form_container .form_content textarea {
+        height: 128px; }
+
+.actividades_title, .contacto_title {
   background-color: #f2f2f2;
   height: 80px;
   display: flex;
   align-items: center; }
 
-.actividades h1, .contacto h1 {
+.actividades_title h1, .contacto_title h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 2.4rem;
   font-weight: 400;

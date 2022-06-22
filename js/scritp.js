@@ -38,9 +38,9 @@ const camping = new Actividades('https://images.unsplash.com/photo-1539617546058
 
 const actividadesArray = [canyoning, torrentismo, senderismo, birdwatching, meditacions, yoga, arborismo, camping];
 
-actividadesArray.forEach(actividad => {
+actividadesArray.forEach((actividad, indice) => {
     actividades.innerHTML += `
-        <div class="card stacked">
+        <div class="card background stacked" id="card${indice + 1}" >
             <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}">
             <div class="card_contenido">
                 <h2 class="card_title">${actividad.titulo}</h2>
@@ -48,9 +48,21 @@ actividadesArray.forEach(actividad => {
             </div>
         </div>`
 
-    const backgroundColor = document.querySelector('.card')
-    const colorChange = ["#F2D338", "#F2C641", "#F26A4B", "#F29999"]
-    console.log(backgroundColor);
-
+    const backgroundColor = document.querySelector(`#card${indice + 1}`);
+    const colorChange = ["#F2D338", "#F2C641", "#F26A4B", "#F29999", "#F29999", "#F26A4B", "#F2C641", "#F2D338"]
+    backgroundColor.style.backgroundColor = colorChange[indice];
 })
 
+const contacto = document.querySelector('#contacto');
+contacto.innerHTML = `
+    <form action="" method="POST">
+        <div class="form_container">
+            <div class="form_content">
+                <input type="text" name="name" id="full-name" placeholder="Nombre" required="">
+                <input type="email" name="email" placeholder="Correo electronico" required="@">
+                <textarea  name="message""></textarea>
+                <button type="submit">enviar</button>
+            </div>
+        </div>
+    </form>
+`

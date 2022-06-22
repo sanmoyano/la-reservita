@@ -1,7 +1,41 @@
-.contacto {
+.contacto_title {
     @extend %background-secciones;
 
     h1 {
         @extend %titulos-secciones;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 600pz;
+
+    .form_container {
+        padding: 2.4rem;
+        width: 100%;
+
+        .form_content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            button {
+                width: 100px;
+                margin-top: 1.6rem;
+                background-color: #F26A4B;
+            }
+
+            input {
+                height: 32px;
+                padding: 1.6rem;
+            }
+
+            textarea {
+                height: 128px;
+            }
+        }
     }
 }

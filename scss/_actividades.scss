@@ -1,4 +1,4 @@
-.actividades {
+.actividades_title {
     @extend %background-secciones;
 
     h1 {
@@ -16,7 +16,6 @@
         justify-content: center;
         align-items: center;
         aspect-ratio: 1/1.5;
-        background-color: "";
 
         .card_img {
             width: 100%;
@@ -46,6 +45,10 @@
         .card_text {
             @extend %textos-card;
         }
+    }
+
+    .background {
+        background-color: #F26A4B;
     }
 
     .stacked {
