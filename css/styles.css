@@ -5,14 +5,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  header .nav_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 60px; }
-    header .nav_logo img {
-      height: 100%; }
   header .nav {
     width: 100%;
     display: flex;
@@ -20,10 +12,35 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2.4rem; }
+    header .nav .nav_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 60px; }
+      header .nav .nav_logo img {
+        height: 100%; }
     header .nav .nav_ul {
       display: flex;
       flex-direction: row;
       list-style: none; }
+      @media screen and (max-width: 650px) {
+        header .nav .nav_ul {
+          position: absolute;
+          right: 0px;
+          height: 100vh;
+          top: 90px;
+          background-color: #f2f2f2;
+          flex-direction: column;
+          z-index: 10000;
+          align-items: center;
+          padding: 2.4rem;
+          gap: 1rem;
+          width: 100%;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out; }
+          header .nav .nav_ul.active {
+            opacity: 1; } }
       header .nav .nav_ul .nav-item {
         margin: 0 10px;
         align-items: center; }
@@ -35,12 +52,15 @@ header {
           font-family: 'Bebas Neue', cursive;
           letter-spacing: 0.2rem; }
   header .nav_toggle {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 60px;
     cursor: pointer; }
+    @media screen and (max-width: 650px) {
+      header .nav_toggle {
+        display: block; } }
     header .nav_toggle img {
       height: 100%; }
 
@@ -163,7 +183,7 @@ form {
     align-items: center; }
     .footer_container .footer_content .redes {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column; }
     .footer_container .footer_content .redes {
       gap: 1.6rem; }
       .footer_container .footer_content .redes p {
@@ -175,6 +195,14 @@ form {
         opacity: 0.8;
         letter-spacing: 0.2rem;
         text-align: end; }
+      .footer_container .footer_content .redes .redes_iconos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .footer_container .footer_content .redes .redes_iconos a {
+          color: #f2f2f2; }
+          .footer_container .footer_content .redes .redes_iconos a i {
+            font-size: 2.4rem; }
     .footer_container .footer_content .titulos {
       font-family: 'Bebas Neue', cursive;
       font-size: 2.6rem;

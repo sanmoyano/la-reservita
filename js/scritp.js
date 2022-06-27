@@ -10,12 +10,6 @@ linksNavBar.forEach(links => {
         </li>`
 });
 
-const menuToggle = document.querySelector('.nav_toggle');
-
-menuToggle.addEventListener('click', () => {
-    console.log("click");
-});
-
 // ACTIVIDADES
 const actividades = document.querySelector('#actividades');
 
@@ -73,8 +67,10 @@ footer.innerHTML = `
         <div class="footer_content">
             <div class="redes">
                 <p>Seguinos en nuestras redes</p>
-                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram"></a>
+                <div class="redes_iconos">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lareservita/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
             <div class="titulos">
                 <p>La Reservita</p>
@@ -83,3 +79,22 @@ footer.innerHTML = `
         </div>
     </div>
 `
+//NAV MENU MOBiLE
+const navSlide = () => {
+    const burger = document.querySelector('.nav_toggle')
+    const nav = document.querySelector('.nav_ul')
+    const navLinks = document.querySelectorAll('.nav-item')
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active')
+        console.log("hacer click")
+    })
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.toggle('active')
+        }
+        )
+    })
+}
+navSlide()
