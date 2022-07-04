@@ -1,6 +1,6 @@
 // NAVBAR
 const navBar = document.querySelector('#nav');
-const linksNavBar = ['Nostros', 'Donde estmos', 'Contacto'];
+const linksNavBar = ['Nostros', 'Actividades', 'Donde estmos', 'Contacto'];
 
 
 linksNavBar.forEach(links => {
@@ -11,7 +11,7 @@ linksNavBar.forEach(links => {
 });
 
 // ACTIVIDADES
-const actividades = document.querySelector('#actividades');
+const actividades = document.querySelector('#todas_las_actividades');
 
 class Actividades {
     constructor(img, titulo, descripcion) {
@@ -32,20 +32,20 @@ const camping = new Actividades('https://images.unsplash.com/photo-1539617546058
 
 const actividadesArray = [canyoning, torrentismo, senderismo, birdwatching, meditacions, yoga, arborismo, camping];
 
-// actividadesArray.forEach((actividad, indice) => {
-//     actividades.innerHTML += `
-//         <div class="card background stacked" id="card${indice + 1}" >
-//             <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}"> 
-//             <div class="card_contenido">
-//                 <h2 class="card_title">${actividad.titulo}</h2>
-//                 <p class="card_text">${actividad.descripcion}</p>
-//             </div>
-//         </div>`
+actividadesArray.forEach((actividad, indice) => {
+    actividades.innerHTML += `
+        <div class="card stacked" id="card${indice + 1}" >
+            <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}"> 
+            <div class="card_contenido">
+                <h2 class="card_title">${actividad.titulo}</h2>
+                <p class="card_text">${actividad.descripcion}</p>
+            </div>
+        </div>`
 
-//     const backgroundColor = document.querySelector(`#card${indice + 1}`);
-//     const colorChange = ["#F2D338", "#F2C641", "#F26A4B", "#F29999", "#F29999", "#F26A4B", "#F2C641", "#F2D338"]
-//     backgroundColor.style.backgroundColor = colorChange[indice];
-// })
+    const backgroundColor = document.querySelector(`#card${indice + 1}`);
+    const colorChange = ["#F2D338", "#F2C641", "#F26A4B", "#F29999", "#F29999", "#F26A4B", "#F2C641", "#F2D338"]
+    backgroundColor.style.backgroundColor = colorChange[indice];
+})
 
 const contacto = document.querySelector('#contacto');
 contacto.innerHTML = `
