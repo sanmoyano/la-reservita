@@ -1,21 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "bebas-light";
     src: url(../fonts/bebas/BebasNeueThin-4B3mY.ttf);
 }
+
 @font-face {
     font-family: "bebas-bold";
     src: url(../fonts/bebas/BebasNeueBold-7B9LE.ttf);
 }
+
 @font-face {
     font-family: "bebas";
     src: url(../fonts/bebas/BebasNeueRegular-gxj83.ttf);
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 600px;
     background-size: 100% 100%;
@@ -25,6 +29,7 @@
     align-items: center;
     background-image: url(/img/mountain-mountains-mountain-forest-mountain-view.jpg);
 }
+
 .capa {
     width: 100%;
     height: 100%;
@@ -33,21 +38,24 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.329);
 }
-.encabezado{
+
+.encabezado {
     z-index: 1;
     width: 100%;
-    
+
     text-align: center;
 }
-.encabezado h1{
+
+.encabezado h1 {
     color: #fff;
     font-size: 90px;
     font-weight: bolder;
     margin-bottom: 20px;
     letter-spacing: 12px;
     font-family: 'bebas';
-   
+
 }
+
 .encabezado h3 {
     color: #fff;
     font-size: 50px;
@@ -57,12 +65,14 @@
     letter-spacing: 7px;
 }
 
-.quienesSomosTit, .dondeEstamos {
+.quienesSomosTit,
+.dondeEstamos {
     display: flex;
     justify-content: flex-end;
 }
 
-.quienesSomosTit, .dondeEstamos h3 {
+.quienesSomosTit,
+.dondeEstamos h3 {
     font-family: "bebas";
     font-size: 35px;
     margin-top: 15px;
@@ -88,8 +98,9 @@
     position: absolute;
     top: 0;
     left: 0;
-   
+
 }
+
 .sectionText {
     width: 40%;
     height: 450px;
@@ -98,14 +109,15 @@
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     height: 80%;
     width: 80%;
     margin: 0 auto;
     text-align: right;
 }
 
-.quienesSomosSection .sectionText h5{
+.quienesSomosSection .sectionText h5 {
     max-height: 50px;
     background-color: rgba(245, 196, 65);
     display: inline-block;
@@ -115,13 +127,15 @@
     font-size: 30px;
     padding: 5px;
 }
+
 .quienesSomosSection .sectionText p {
     font-family: "bebas";
     font-size: 25px;
     margin-top: 50px;
     letter-spacing: 5px;
 }
-.ubicacion{
+
+.ubicacion {
     width: 100%;
     height: 600px;
     background-size: 100% 100%;
@@ -131,6 +145,7 @@
     align-items: center;
     background-image: url(https://img5.goodfon.com/wallpaper/nbig/3/e7/les-doroga-razvilka-zelen-vetki-listia-leto.jpg);
 }
+
 .bgUbicacion {
     display: flex;
     justify-content: center;
@@ -138,21 +153,25 @@
     background-color: rgb(212, 212, 212);
     flex-direction: column;
 }
-.cuadroDireccion{
+
+.cuadroDireccion {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.cuadroDireccion hr{
+
+.cuadroDireccion hr {
     display: block;
     height: 90px;
 }
-.dirText{
+
+.dirText {
     margin-top: 5px;
     font-family: "bebas";
     letter-spacing: 3px;
 }
+
 .dirText p {
     margin-top: 10px;
-    font-size:10px;
+    font-size: 10px;
 }
