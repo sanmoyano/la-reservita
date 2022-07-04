@@ -1,0 +1,62 @@
+.actividades_title {
+    @extend %background-secciones;
+
+    h1 {
+        @extend %titulos-secciones;
+    }
+}
+
+.actividades_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1.5;
+
+        .card_img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1.5;
+            object-fit: cover;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card_img:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .card_contenido {
+        display: flex;
+        flex-direction: column;
+        padding: 1.6rem;
+        background-color: #f2f2f2;
+        margin: 1.6rem;
+        z-index: 1;
+
+        .card_title {
+            @extend %titulos-card;
+        }
+
+        .card_text {
+            @extend %textos-card;
+        }
+    }
+
+    .background {
+        background-color: #F26A4B;
+    }
+
+    .stacked {
+        display: grid;
+    }
+
+    .stacked>* {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}

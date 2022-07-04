@@ -1,0 +1,67 @@
+.footer_container {
+    background-color: #0d0d0d;
+    padding: 2.4rem;
+
+    .footer_content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .redes {
+            gap: 1.6rem;
+
+            p {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1.6rem;
+                font-weight: lighter;
+                text-align: start;
+                color: #f2f2f2;
+                opacity: 0.8;
+                letter-spacing: 0.2rem;
+                text-align: end;
+            }
+
+            .redes_iconos {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                a {
+                    color: #f2f2f2;
+
+                    i {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+
+        }
+
+        .titulos {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.6rem;
+            letter-spacing: 0.2rem;
+            color: #f2f2f2;
+            font-weight: 400;
+            text-align: end;
+
+            .texto {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1.6rem;
+                font-weight: lighter;
+                text-align: start;
+                color: #f2f2f2;
+                opacity: 0.8;
+                letter-spacing: 0.2rem;
+                text-align: end;
+            }
+        }
+    }
+}

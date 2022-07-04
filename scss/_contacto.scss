@@ -1,0 +1,47 @@
+.contacto_title {
+    @extend %background-secciones;
+
+    h1 {
+        @extend %titulos-secciones;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+
+    .form_container {
+        padding: 2.4rem;
+        width: 100%;
+
+        .form_content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            button {
+                width: 150px;
+                background-color: #F26A4B;
+                border: #F26A4B;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 1.6rem;
+                color: #f2f2f2;
+                padding: 1rem;
+                cursor: pointer;
+            }
+
+            input {
+                height: 32px;
+                padding: 1.6rem;
+            }
+
+            textarea {
+                min-height: 128px;
+            }
+        }
+    }
+}
