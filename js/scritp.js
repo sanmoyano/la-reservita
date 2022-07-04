@@ -11,7 +11,7 @@ linksNavBar.forEach(links => {
 });
 
 // ACTIVIDADES
-const actividades = document.querySelector('#actividades');
+const actividades = document.querySelector('#todas_las_actividades');
 
 class Actividades {
     constructor(img, titulo, descripcion) {
@@ -34,8 +34,8 @@ const actividadesArray = [canyoning, torrentismo, senderismo, birdwatching, medi
 
 actividadesArray.forEach((actividad, indice) => {
     actividades.innerHTML += `
-        <div class="card background stacked" id="card${indice + 1}" >
-            <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}">
+        <div class="card stacked" id="card${indice + 1}" >
+            <img class="card_img" src="${actividad.img}" alt="${actividad.titulo}"> 
             <div class="card_contenido">
                 <h2 class="card_title">${actividad.titulo}</h2>
                 <p class="card_text">${actividad.descripcion}</p>
